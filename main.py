@@ -17,9 +17,9 @@ if __name__ == '__main__':
     MemoryMonitor.log_memory_usage()
     
     # Démarrer l'application Flask avec l'extension SocketIO
-    # Force using port 5001 as primary port
-    port = 5001
-    debug = True
+    # Use port 5000 as the primary port for deployment
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('FLASK_DEBUG', 'False').lower() == 'true'
     
     logger.info(f"Démarrage du serveur sur le port {port}...")
     socketio.run(app, host="0.0.0.0", port=port, debug=debug, allow_unsafe_werkzeug=True)
