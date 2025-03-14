@@ -35,6 +35,7 @@ args = "Flask Server"
 [[workflows.workflow]]
 name = "Setup Directories"
 author = "agent"
+mode = "sequential"
 
 [workflows.workflow.metadata]
 agentRequireRestartOnSave = false
@@ -49,6 +50,7 @@ args = "python mkdir_directories.py"
 [[workflows.workflow]]
 name = "Run Setup Directories"
 author = "agent"
+mode = "parallel"
 
 [workflows.workflow.metadata]
 agentRequireRestartOnSave = false
@@ -93,6 +95,7 @@ args = "python ia_activite_automatique.py"
 [[workflows.workflow]]
 name = "Test Mobile IA"
 author = 39699562
+mode = "parallel"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
@@ -101,17 +104,14 @@ args = "python test_mobile_ia_auto.py"
 [[workflows.workflow]]
 name = "Flask Server"
 author = "agent"
+mode = "sequential"
 
 [workflows.workflow.metadata]
 agentRequireRestartOnSave = false
 
 [[workflows.workflow.tasks]]
-task = "packager.installForAll"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "python main.py"
-waitForPort = 5001
+task = "workflow.run"
+args = "Flask Server"
 
 [[workflows.workflow]]
 name = "Test Echo Analyzer"
@@ -127,7 +127,7 @@ externalPort = 80
 
 [[ports]]
 localPort = 5001
-externalPort = 3000
+externalPort = 4200
 
 [[ports]]
 localPort = 5002
