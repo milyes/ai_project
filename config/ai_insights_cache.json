@@ -10235,5 +10235,1133 @@
         }
       }
     }
+  },
+  "vulnerability_ts:1745632796.997079": {
+    "summary": {
+      "total": 35,
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "critical_vulnerabilities": [
+      {
+        "id": "CVE-2022-12345",
+        "title": "Exécution de code à distance (routeur)",
+        "severity": "critical",
+        "description": "Une vulnérabilité critique permet l'exécution de code arbitraire sur le routeur.",
+        "affected_devices": [
+          "Router X5",
+          "IoT Hub"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-23456",
+        "title": "Faille de sécurité (caméra IP)",
+        "severity": "critical",
+        "description": "Une faille dans le firmware de la caméra permet la récupération de flux vidéo non autorisée.",
+        "affected_devices": [
+          "IP Cam Model 3"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-34567",
+        "title": "Authentification faible (assistant vocal)",
+        "severity": "high",
+        "description": "L'assistant vocal utilise une méthode d'authentification vulnérable aux attaques.",
+        "affected_devices": [
+          "Voice Assistant V2"
+        ],
+        "ai_insights": "Cette vulnérabilité représente un risque sérieux et devrait être corrigée rapidement"
+      }
+    ],
+    "severity_distribution": {
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "discovery_timeline": [
+      {
+        "date": "2023-01-15",
+        "vulnerabilities": 5,
+        "description": "Première analyse de sécurité",
+        "ai_insights": "Cette période correspondait potentiellement à la révélation de nouvelles vulnérabilités zero-day dans les protocoles réseau"
+      },
+      {
+        "date": "2023-02-20",
+        "vulnerabilities": 3,
+        "description": "Scan après mise à jour du firmware"
+      },
+      {
+        "date": "2023-03-10",
+        "vulnerabilities": 8,
+        "description": "Analyse approfondie suite à l'ajout de nouveaux appareils",
+        "ai_insights": "L'introduction de nouveaux équipements est souvent associée à un pic de vulnérabilités. Renforcez les procédures de sécurité préalables à l'intégration."
+      },
+      {
+        "date": "2023-04-05",
+        "vulnerabilities": 2,
+        "description": "Vérification post-correction"
+      }
+    ],
+    "remediation_plan": [
+      {
+        "step": 1,
+        "title": "Mise à jour des firmwares",
+        "description": "Mettre à jour tous les firmwares des appareils connectés, en particulier le routeur et les caméras IP.",
+        "difficulty": "easy",
+        "estimated_time": "1-2 heures",
+        "ai_recommendation": "Priorisez les mises à jour de sécurité et envisagez d'implémenter un système de gestion automatisée des mises à jour."
+      },
+      {
+        "step": 2,
+        "title": "Renforcer les mots de passe",
+        "description": "Changer tous les mots de passe par défaut et utiliser des mots de passe forts uniques pour chaque appareil.",
+        "difficulty": "easy",
+        "estimated_time": "30 minutes",
+        "ai_recommendation": "L'automatisation de cette remédiation via des scripts ou outils dédiés peut améliorer l'efficacité"
+      },
+      {
+        "step": 3,
+        "title": "Segmenter le réseau",
+        "description": "Créer des réseaux séparés pour les appareils IoT et les ordinateurs personnels afin de limiter les risques.",
+        "difficulty": "medium",
+        "estimated_time": "2 heures",
+        "ai_recommendation": "Documentez précisément les changements effectués pour faciliter l'audit ultérieur"
+      },
+      {
+        "step": 4,
+        "title": "Configurer un pare-feu",
+        "description": "Mettre en place des règles de pare-feu pour bloquer les communications non essentielles.",
+        "difficulty": "hard",
+        "estimated_time": "3-4 heures",
+        "ai_recommendation": "Adoptez une approche de liste blanche plutôt que de liste noire pour les règles de pare-feu."
+      }
+    ],
+    "ai_advanced_recommendations": [
+      {
+        "title": "Programme de gestion des vulnérabilités critiques",
+        "description": "Mettre en place un processus dédié pour traiter rapidement les vulnérabilités critiques, avec un SLA de 24-48h maximum.",
+        "ai_confidence": 95
+      },
+      {
+        "title": "Automatisation de l'analyse de sécurité",
+        "description": "Implémenter des outils d'analyse continue de sécurité pour identifier les vulnérabilités dès leur apparition.",
+        "ai_confidence": 90
+      },
+      {
+        "title": "Surveillance comportementale du réseau",
+        "description": "Déployer une solution de détection d'anomalies basée sur l'apprentissage automatique pour identifier les comportements suspects.",
+        "ai_confidence": 85
+      },
+      {
+        "title": "Simulation d'attaque (Red Team)",
+        "description": "Organiser des exercices réguliers de simulation d'attaque pour tester les défenses et la réponse aux incidents.",
+        "ai_confidence": 80
+      },
+      {
+        "title": "Programme de formation à la sécurité",
+        "description": "Former régulièrement les utilisateurs aux meilleures pratiques de sécurité et aux techniques d'ingénierie sociale.",
+        "ai_confidence": 90
+      }
+    ]
+  },
+  "protocol_ts:1745632797.477194": {
+    "average_score": 65,
+    "protocol_distribution": {
+      "WPA3": 20,
+      "WPA2": 45,
+      "WPA": 20,
+      "WEP": 10,
+      "OPEN": 5
+    },
+    "protocols": [
+      {
+        "name": "WPA3",
+        "security": 95,
+        "encryption": "CCMP (AES)",
+        "authentication": "SAE",
+        "data_protection": "Très élevée",
+        "known_vulnerabilities": "Très peu",
+        "overall_score": 95,
+        "ai_security_analysis": "Offre le plus haut niveau de sécurité avec authentification SAE"
+      },
+      {
+        "name": "WPA2",
+        "security": 80,
+        "encryption": "CCMP (AES)",
+        "authentication": "PSK",
+        "data_protection": "Élevée",
+        "known_vulnerabilities": "Quelques-unes",
+        "overall_score": 80,
+        "ai_security_analysis": "Sécurité adéquate pour la plupart des usages avec chiffrement AES"
+      },
+      {
+        "name": "WPA",
+        "security": 60,
+        "encryption": "TKIP",
+        "authentication": "PSK",
+        "data_protection": "Moyenne",
+        "known_vulnerabilities": "Plusieurs",
+        "overall_score": 60,
+        "ai_security_analysis": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée"
+      },
+      {
+        "name": "WEP",
+        "security": 30,
+        "encryption": "RC4",
+        "authentication": "Clé partagée",
+        "data_protection": "Faible",
+        "known_vulnerabilities": "Nombreuses",
+        "overall_score": 25,
+        "ai_security_analysis": "Très vulnérable, à remplacer absolument"
+      },
+      {
+        "name": "OPEN",
+        "security": 0,
+        "encryption": "Aucun",
+        "authentication": "Aucune",
+        "data_protection": "Aucune",
+        "known_vulnerabilities": "Toutes",
+        "overall_score": 0,
+        "ai_security_analysis": "Aucune sécurité, recommandation de migration immédiate"
+      }
+    ],
+    "vulnerability_by_protocol": {
+      "WPA3": {
+        "Bruteforce": 5,
+        "MITM": 10,
+        "Déauthentification": 15
+      },
+      "WPA2": {
+        "Bruteforce": 20,
+        "MITM": 25,
+        "Déauthentification": 30
+      },
+      "WPA": {
+        "Bruteforce": 40,
+        "MITM": 45,
+        "Déauthentification": 35
+      },
+      "WEP": {
+        "Bruteforce": 80,
+        "MITM": 75,
+        "Déauthentification": 70
+      }
+    },
+    "protocol_strengths": {
+      "WPA3": {
+        "Chiffrement": 95,
+        "Authentification": 90,
+        "Confidentialité": 90,
+        "Intégrité": 90,
+        "Disponibilité": 85
+      },
+      "WPA2": {
+        "Chiffrement": 80,
+        "Authentification": 75,
+        "Confidentialité": 80,
+        "Intégrité": 75,
+        "Disponibilité": 80
+      },
+      "WPA": {
+        "Chiffrement": 60,
+        "Authentification": 55,
+        "Confidentialité": 60,
+        "Intégrité": 60,
+        "Disponibilité": 75
+      }
+    },
+    "recommendations": [
+      {
+        "title": "Mettre à niveau vers WPA3",
+        "description": "Le protocole WPA3 offre une meilleure protection contre les attaques par force brute et une confidentialité de transfert parfaite.",
+        "ai_insight": "Le WPA3 offre une protection contre les attaques par force brute grâce à l'authentification SAE et une confidentialité de transfert parfaite."
+      },
+      {
+        "title": "Remplacer les appareils utilisant WEP",
+        "description": "Les appareils utilisant WEP représentent un risque majeur pour votre réseau. Remplacez-les ou isolez-les dans un réseau séparé.",
+        "ai_insight": "Cette recommandation devrait être mise en œuvre dans le cadre d'une stratégie de défense en profondeur"
+      },
+      {
+        "title": "Activer le filtrage MAC",
+        "description": "Bien que non infaillible, le filtrage MAC ajoute une couche de protection supplémentaire en limitant les appareils autorisés à se connecter.",
+        "ai_insight": "Cette recommandation devrait être mise en œuvre dans le cadre d'une stratégie de défense en profondeur"
+      }
+    ],
+    "ai_protocol_comparison": {
+      "summary": "L'analyse comparative des protocoles révèle des différences significatives en termes de sécurité",
+      "protocols": {
+        "WPA3": {
+          "insight": "Offre le plus haut niveau de sécurité avec authentification SAE",
+          "recommendation": "Continuer d'utiliser WPA3 avec des mots de passe forts"
+        },
+        "WPA2": {
+          "insight": "Sécurité adéquate pour la plupart des usages avec chiffrement AES",
+          "recommendation": "Migrer vers WPA3 si les équipements le supportent"
+        },
+        "WPA": {
+          "insight": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée",
+          "recommendation": "Migrer d'urgence vers WPA2 ou idéalement WPA3"
+        },
+        "WEP": {
+          "insight": "Très vulnérable, à remplacer absolument",
+          "recommendation": "Remplacer immédiatement par WPA2 ou WPA3"
+        },
+        "OPEN": {
+          "insight": "Aucune sécurité, recommandation de migration immédiate",
+          "recommendation": "Implémenter immédiatement un chiffrement WPA2 ou WPA3"
+        }
+      }
+    }
+  },
+  "vulnerability_ts:1746978386.914386": {
+    "summary": {
+      "total": 35,
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "critical_vulnerabilities": [
+      {
+        "id": "CVE-2022-12345",
+        "title": "Exécution de code à distance (routeur)",
+        "severity": "critical",
+        "description": "Une vulnérabilité critique permet l'exécution de code arbitraire sur le routeur.",
+        "affected_devices": [
+          "Router X5",
+          "IoT Hub"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-23456",
+        "title": "Faille de sécurité (caméra IP)",
+        "severity": "critical",
+        "description": "Une faille dans le firmware de la caméra permet la récupération de flux vidéo non autorisée.",
+        "affected_devices": [
+          "IP Cam Model 3"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-34567",
+        "title": "Authentification faible (assistant vocal)",
+        "severity": "high",
+        "description": "L'assistant vocal utilise une méthode d'authentification vulnérable aux attaques.",
+        "affected_devices": [
+          "Voice Assistant V2"
+        ],
+        "ai_insights": "Cette vulnérabilité représente un risque sérieux et devrait être corrigée rapidement"
+      }
+    ],
+    "severity_distribution": {
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "discovery_timeline": [
+      {
+        "date": "2023-01-15",
+        "vulnerabilities": 5,
+        "description": "Première analyse de sécurité",
+        "ai_insights": "Cette période correspondait potentiellement à la révélation de nouvelles vulnérabilités zero-day dans les protocoles réseau"
+      },
+      {
+        "date": "2023-02-20",
+        "vulnerabilities": 3,
+        "description": "Scan après mise à jour du firmware"
+      },
+      {
+        "date": "2023-03-10",
+        "vulnerabilities": 8,
+        "description": "Analyse approfondie suite à l'ajout de nouveaux appareils",
+        "ai_insights": "L'introduction de nouveaux équipements est souvent associée à un pic de vulnérabilités. Renforcez les procédures de sécurité préalables à l'intégration."
+      },
+      {
+        "date": "2023-04-05",
+        "vulnerabilities": 2,
+        "description": "Vérification post-correction"
+      }
+    ],
+    "remediation_plan": [
+      {
+        "step": 1,
+        "title": "Mise à jour des firmwares",
+        "description": "Mettre à jour tous les firmwares des appareils connectés, en particulier le routeur et les caméras IP.",
+        "difficulty": "easy",
+        "estimated_time": "1-2 heures",
+        "ai_recommendation": "Priorisez les mises à jour de sécurité et envisagez d'implémenter un système de gestion automatisée des mises à jour."
+      },
+      {
+        "step": 2,
+        "title": "Renforcer les mots de passe",
+        "description": "Changer tous les mots de passe par défaut et utiliser des mots de passe forts uniques pour chaque appareil.",
+        "difficulty": "easy",
+        "estimated_time": "30 minutes",
+        "ai_recommendation": "Former les équipes aux bonnes pratiques associées peut réduire les risques de récurrence"
+      },
+      {
+        "step": 3,
+        "title": "Segmenter le réseau",
+        "description": "Créer des réseaux séparés pour les appareils IoT et les ordinateurs personnels afin de limiter les risques.",
+        "difficulty": "medium",
+        "estimated_time": "2 heures",
+        "ai_recommendation": "L'automatisation de cette remédiation via des scripts ou outils dédiés peut améliorer l'efficacité"
+      },
+      {
+        "step": 4,
+        "title": "Configurer un pare-feu",
+        "description": "Mettre en place des règles de pare-feu pour bloquer les communications non essentielles.",
+        "difficulty": "hard",
+        "estimated_time": "3-4 heures",
+        "ai_recommendation": "Adoptez une approche de liste blanche plutôt que de liste noire pour les règles de pare-feu."
+      }
+    ],
+    "ai_advanced_recommendations": [
+      {
+        "title": "Programme de gestion des vulnérabilités critiques",
+        "description": "Mettre en place un processus dédié pour traiter rapidement les vulnérabilités critiques, avec un SLA de 24-48h maximum.",
+        "ai_confidence": 95
+      },
+      {
+        "title": "Automatisation de l'analyse de sécurité",
+        "description": "Implémenter des outils d'analyse continue de sécurité pour identifier les vulnérabilités dès leur apparition.",
+        "ai_confidence": 90
+      },
+      {
+        "title": "Surveillance comportementale du réseau",
+        "description": "Déployer une solution de détection d'anomalies basée sur l'apprentissage automatique pour identifier les comportements suspects.",
+        "ai_confidence": 85
+      },
+      {
+        "title": "Simulation d'attaque (Red Team)",
+        "description": "Organiser des exercices réguliers de simulation d'attaque pour tester les défenses et la réponse aux incidents.",
+        "ai_confidence": 80
+      },
+      {
+        "title": "Programme de formation à la sécurité",
+        "description": "Former régulièrement les utilisateurs aux meilleures pratiques de sécurité et aux techniques d'ingénierie sociale.",
+        "ai_confidence": 90
+      }
+    ]
+  },
+  "protocol_ts:1746978387.448198": {
+    "average_score": 65,
+    "protocol_distribution": {
+      "WPA3": 20,
+      "WPA2": 45,
+      "WPA": 20,
+      "WEP": 10,
+      "OPEN": 5
+    },
+    "protocols": [
+      {
+        "name": "WPA3",
+        "security": 95,
+        "encryption": "CCMP (AES)",
+        "authentication": "SAE",
+        "data_protection": "Très élevée",
+        "known_vulnerabilities": "Très peu",
+        "overall_score": 95,
+        "ai_security_analysis": "Offre le plus haut niveau de sécurité avec authentification SAE"
+      },
+      {
+        "name": "WPA2",
+        "security": 80,
+        "encryption": "CCMP (AES)",
+        "authentication": "PSK",
+        "data_protection": "Élevée",
+        "known_vulnerabilities": "Quelques-unes",
+        "overall_score": 80,
+        "ai_security_analysis": "Sécurité adéquate pour la plupart des usages avec chiffrement AES"
+      },
+      {
+        "name": "WPA",
+        "security": 60,
+        "encryption": "TKIP",
+        "authentication": "PSK",
+        "data_protection": "Moyenne",
+        "known_vulnerabilities": "Plusieurs",
+        "overall_score": 60,
+        "ai_security_analysis": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée"
+      },
+      {
+        "name": "WEP",
+        "security": 30,
+        "encryption": "RC4",
+        "authentication": "Clé partagée",
+        "data_protection": "Faible",
+        "known_vulnerabilities": "Nombreuses",
+        "overall_score": 25,
+        "ai_security_analysis": "Très vulnérable, à remplacer absolument"
+      },
+      {
+        "name": "OPEN",
+        "security": 0,
+        "encryption": "Aucun",
+        "authentication": "Aucune",
+        "data_protection": "Aucune",
+        "known_vulnerabilities": "Toutes",
+        "overall_score": 0,
+        "ai_security_analysis": "Aucune sécurité, recommandation de migration immédiate"
+      }
+    ],
+    "vulnerability_by_protocol": {
+      "WPA3": {
+        "Bruteforce": 5,
+        "MITM": 10,
+        "Déauthentification": 15
+      },
+      "WPA2": {
+        "Bruteforce": 20,
+        "MITM": 25,
+        "Déauthentification": 30
+      },
+      "WPA": {
+        "Bruteforce": 40,
+        "MITM": 45,
+        "Déauthentification": 35
+      },
+      "WEP": {
+        "Bruteforce": 80,
+        "MITM": 75,
+        "Déauthentification": 70
+      }
+    },
+    "protocol_strengths": {
+      "WPA3": {
+        "Chiffrement": 95,
+        "Authentification": 90,
+        "Confidentialité": 90,
+        "Intégrité": 90,
+        "Disponibilité": 85
+      },
+      "WPA2": {
+        "Chiffrement": 80,
+        "Authentification": 75,
+        "Confidentialité": 80,
+        "Intégrité": 75,
+        "Disponibilité": 80
+      },
+      "WPA": {
+        "Chiffrement": 60,
+        "Authentification": 55,
+        "Confidentialité": 60,
+        "Intégrité": 60,
+        "Disponibilité": 75
+      }
+    },
+    "recommendations": [
+      {
+        "title": "Mettre à niveau vers WPA3",
+        "description": "Le protocole WPA3 offre une meilleure protection contre les attaques par force brute et une confidentialité de transfert parfaite.",
+        "ai_insight": "Le WPA3 offre une protection contre les attaques par force brute grâce à l'authentification SAE et une confidentialité de transfert parfaite."
+      },
+      {
+        "title": "Remplacer les appareils utilisant WEP",
+        "description": "Les appareils utilisant WEP représentent un risque majeur pour votre réseau. Remplacez-les ou isolez-les dans un réseau séparé.",
+        "ai_insight": "Cette recommandation devrait être mise en œuvre dans le cadre d'une stratégie de défense en profondeur"
+      },
+      {
+        "title": "Activer le filtrage MAC",
+        "description": "Bien que non infaillible, le filtrage MAC ajoute une couche de protection supplémentaire en limitant les appareils autorisés à se connecter.",
+        "ai_insight": "Cette action pourrait être automatisée via des scripts pour assurer une conformité continue"
+      }
+    ],
+    "ai_protocol_comparison": {
+      "summary": "L'analyse comparative des protocoles révèle des différences significatives en termes de sécurité",
+      "protocols": {
+        "WPA3": {
+          "insight": "Offre le plus haut niveau de sécurité avec authentification SAE",
+          "recommendation": "Continuer d'utiliser WPA3 avec des mots de passe forts"
+        },
+        "WPA2": {
+          "insight": "Sécurité adéquate pour la plupart des usages avec chiffrement AES",
+          "recommendation": "Migrer vers WPA3 si les équipements le supportent"
+        },
+        "WPA": {
+          "insight": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée",
+          "recommendation": "Migrer d'urgence vers WPA2 ou idéalement WPA3"
+        },
+        "WEP": {
+          "insight": "Très vulnérable, à remplacer absolument",
+          "recommendation": "Remplacer immédiatement par WPA2 ou WPA3"
+        },
+        "OPEN": {
+          "insight": "Aucune sécurité, recommandation de migration immédiate",
+          "recommendation": "Implémenter immédiatement un chiffrement WPA2 ou WPA3"
+        }
+      }
+    }
+  },
+  "vulnerability_ts:1746978399.916932": {
+    "summary": {
+      "total": 35,
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "critical_vulnerabilities": [
+      {
+        "id": "CVE-2022-12345",
+        "title": "Exécution de code à distance (routeur)",
+        "severity": "critical",
+        "description": "Une vulnérabilité critique permet l'exécution de code arbitraire sur le routeur.",
+        "affected_devices": [
+          "Router X5",
+          "IoT Hub"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-23456",
+        "title": "Faille de sécurité (caméra IP)",
+        "severity": "critical",
+        "description": "Une faille dans le firmware de la caméra permet la récupération de flux vidéo non autorisée.",
+        "affected_devices": [
+          "IP Cam Model 3"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-34567",
+        "title": "Authentification faible (assistant vocal)",
+        "severity": "high",
+        "description": "L'assistant vocal utilise une méthode d'authentification vulnérable aux attaques.",
+        "affected_devices": [
+          "Voice Assistant V2"
+        ],
+        "ai_insights": "Cette vulnérabilité représente un risque sérieux et devrait être corrigée rapidement"
+      }
+    ],
+    "severity_distribution": {
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "discovery_timeline": [
+      {
+        "date": "2023-01-15",
+        "vulnerabilities": 5,
+        "description": "Première analyse de sécurité",
+        "ai_insights": "L'analyse historique suggère un cycle de vulnérabilité type pour ce profil réseau"
+      },
+      {
+        "date": "2023-02-20",
+        "vulnerabilities": 3,
+        "description": "Scan après mise à jour du firmware"
+      },
+      {
+        "date": "2023-03-10",
+        "vulnerabilities": 8,
+        "description": "Analyse approfondie suite à l'ajout de nouveaux appareils",
+        "ai_insights": "L'introduction de nouveaux équipements est souvent associée à un pic de vulnérabilités. Renforcez les procédures de sécurité préalables à l'intégration."
+      },
+      {
+        "date": "2023-04-05",
+        "vulnerabilities": 2,
+        "description": "Vérification post-correction"
+      }
+    ],
+    "remediation_plan": [
+      {
+        "step": 1,
+        "title": "Mise à jour des firmwares",
+        "description": "Mettre à jour tous les firmwares des appareils connectés, en particulier le routeur et les caméras IP.",
+        "difficulty": "easy",
+        "estimated_time": "1-2 heures",
+        "ai_recommendation": "Priorisez les mises à jour de sécurité et envisagez d'implémenter un système de gestion automatisée des mises à jour."
+      },
+      {
+        "step": 2,
+        "title": "Renforcer les mots de passe",
+        "description": "Changer tous les mots de passe par défaut et utiliser des mots de passe forts uniques pour chaque appareil.",
+        "difficulty": "easy",
+        "estimated_time": "30 minutes",
+        "ai_recommendation": "Former les équipes aux bonnes pratiques associées peut réduire les risques de récurrence"
+      },
+      {
+        "step": 3,
+        "title": "Segmenter le réseau",
+        "description": "Créer des réseaux séparés pour les appareils IoT et les ordinateurs personnels afin de limiter les risques.",
+        "difficulty": "medium",
+        "estimated_time": "2 heures",
+        "ai_recommendation": "Former les équipes aux bonnes pratiques associées peut réduire les risques de récurrence"
+      },
+      {
+        "step": 4,
+        "title": "Configurer un pare-feu",
+        "description": "Mettre en place des règles de pare-feu pour bloquer les communications non essentielles.",
+        "difficulty": "hard",
+        "estimated_time": "3-4 heures",
+        "ai_recommendation": "Adoptez une approche de liste blanche plutôt que de liste noire pour les règles de pare-feu."
+      }
+    ],
+    "ai_advanced_recommendations": [
+      {
+        "title": "Programme de gestion des vulnérabilités critiques",
+        "description": "Mettre en place un processus dédié pour traiter rapidement les vulnérabilités critiques, avec un SLA de 24-48h maximum.",
+        "ai_confidence": 95
+      },
+      {
+        "title": "Automatisation de l'analyse de sécurité",
+        "description": "Implémenter des outils d'analyse continue de sécurité pour identifier les vulnérabilités dès leur apparition.",
+        "ai_confidence": 90
+      },
+      {
+        "title": "Surveillance comportementale du réseau",
+        "description": "Déployer une solution de détection d'anomalies basée sur l'apprentissage automatique pour identifier les comportements suspects.",
+        "ai_confidence": 85
+      },
+      {
+        "title": "Simulation d'attaque (Red Team)",
+        "description": "Organiser des exercices réguliers de simulation d'attaque pour tester les défenses et la réponse aux incidents.",
+        "ai_confidence": 80
+      },
+      {
+        "title": "Programme de formation à la sécurité",
+        "description": "Former régulièrement les utilisateurs aux meilleures pratiques de sécurité et aux techniques d'ingénierie sociale.",
+        "ai_confidence": 90
+      }
+    ]
+  },
+  "protocol_ts:1746978400.311878": {
+    "average_score": 65,
+    "protocol_distribution": {
+      "WPA3": 20,
+      "WPA2": 45,
+      "WPA": 20,
+      "WEP": 10,
+      "OPEN": 5
+    },
+    "protocols": [
+      {
+        "name": "WPA3",
+        "security": 95,
+        "encryption": "CCMP (AES)",
+        "authentication": "SAE",
+        "data_protection": "Très élevée",
+        "known_vulnerabilities": "Très peu",
+        "overall_score": 95,
+        "ai_security_analysis": "Offre le plus haut niveau de sécurité avec authentification SAE"
+      },
+      {
+        "name": "WPA2",
+        "security": 80,
+        "encryption": "CCMP (AES)",
+        "authentication": "PSK",
+        "data_protection": "Élevée",
+        "known_vulnerabilities": "Quelques-unes",
+        "overall_score": 80,
+        "ai_security_analysis": "Sécurité adéquate pour la plupart des usages avec chiffrement AES"
+      },
+      {
+        "name": "WPA",
+        "security": 60,
+        "encryption": "TKIP",
+        "authentication": "PSK",
+        "data_protection": "Moyenne",
+        "known_vulnerabilities": "Plusieurs",
+        "overall_score": 60,
+        "ai_security_analysis": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée"
+      },
+      {
+        "name": "WEP",
+        "security": 30,
+        "encryption": "RC4",
+        "authentication": "Clé partagée",
+        "data_protection": "Faible",
+        "known_vulnerabilities": "Nombreuses",
+        "overall_score": 25,
+        "ai_security_analysis": "Très vulnérable, à remplacer absolument"
+      },
+      {
+        "name": "OPEN",
+        "security": 0,
+        "encryption": "Aucun",
+        "authentication": "Aucune",
+        "data_protection": "Aucune",
+        "known_vulnerabilities": "Toutes",
+        "overall_score": 0,
+        "ai_security_analysis": "Aucune sécurité, recommandation de migration immédiate"
+      }
+    ],
+    "vulnerability_by_protocol": {
+      "WPA3": {
+        "Bruteforce": 5,
+        "MITM": 10,
+        "Déauthentification": 15
+      },
+      "WPA2": {
+        "Bruteforce": 20,
+        "MITM": 25,
+        "Déauthentification": 30
+      },
+      "WPA": {
+        "Bruteforce": 40,
+        "MITM": 45,
+        "Déauthentification": 35
+      },
+      "WEP": {
+        "Bruteforce": 80,
+        "MITM": 75,
+        "Déauthentification": 70
+      }
+    },
+    "protocol_strengths": {
+      "WPA3": {
+        "Chiffrement": 95,
+        "Authentification": 90,
+        "Confidentialité": 90,
+        "Intégrité": 90,
+        "Disponibilité": 85
+      },
+      "WPA2": {
+        "Chiffrement": 80,
+        "Authentification": 75,
+        "Confidentialité": 80,
+        "Intégrité": 75,
+        "Disponibilité": 80
+      },
+      "WPA": {
+        "Chiffrement": 60,
+        "Authentification": 55,
+        "Confidentialité": 60,
+        "Intégrité": 60,
+        "Disponibilité": 75
+      }
+    },
+    "recommendations": [
+      {
+        "title": "Mettre à niveau vers WPA3",
+        "description": "Le protocole WPA3 offre une meilleure protection contre les attaques par force brute et une confidentialité de transfert parfaite.",
+        "ai_insight": "Le WPA3 offre une protection contre les attaques par force brute grâce à l'authentification SAE et une confidentialité de transfert parfaite."
+      },
+      {
+        "title": "Remplacer les appareils utilisant WEP",
+        "description": "Les appareils utilisant WEP représentent un risque majeur pour votre réseau. Remplacez-les ou isolez-les dans un réseau séparé.",
+        "ai_insight": "L'IA suggère de combiner cette mesure avec un audit régulier des connexions réseau"
+      },
+      {
+        "title": "Activer le filtrage MAC",
+        "description": "Bien que non infaillible, le filtrage MAC ajoute une couche de protection supplémentaire en limitant les appareils autorisés à se connecter.",
+        "ai_insight": "Cette action pourrait être automatisée via des scripts pour assurer une conformité continue"
+      }
+    ],
+    "ai_protocol_comparison": {
+      "summary": "L'analyse comparative des protocoles révèle des différences significatives en termes de sécurité",
+      "protocols": {
+        "WPA3": {
+          "insight": "Offre le plus haut niveau de sécurité avec authentification SAE",
+          "recommendation": "Continuer d'utiliser WPA3 avec des mots de passe forts"
+        },
+        "WPA2": {
+          "insight": "Sécurité adéquate pour la plupart des usages avec chiffrement AES",
+          "recommendation": "Migrer vers WPA3 si les équipements le supportent"
+        },
+        "WPA": {
+          "insight": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée",
+          "recommendation": "Migrer d'urgence vers WPA2 ou idéalement WPA3"
+        },
+        "WEP": {
+          "insight": "Très vulnérable, à remplacer absolument",
+          "recommendation": "Remplacer immédiatement par WPA2 ou WPA3"
+        },
+        "OPEN": {
+          "insight": "Aucune sécurité, recommandation de migration immédiate",
+          "recommendation": "Implémenter immédiatement un chiffrement WPA2 ou WPA3"
+        }
+      }
+    }
+  },
+  "vulnerability_ts:1746978575.382355": {
+    "summary": {
+      "total": 35,
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "critical_vulnerabilities": [
+      {
+        "id": "CVE-2022-12345",
+        "title": "Exécution de code à distance (routeur)",
+        "severity": "critical",
+        "description": "Une vulnérabilité critique permet l'exécution de code arbitraire sur le routeur.",
+        "affected_devices": [
+          "Router X5",
+          "IoT Hub"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-23456",
+        "title": "Faille de sécurité (caméra IP)",
+        "severity": "critical",
+        "description": "Une faille dans le firmware de la caméra permet la récupération de flux vidéo non autorisée.",
+        "affected_devices": [
+          "IP Cam Model 3"
+        ],
+        "ai_insights": "Cette vulnérabilité peut compromettre l'ensemble du réseau et nécessite une action immédiate"
+      },
+      {
+        "id": "CVE-2022-34567",
+        "title": "Authentification faible (assistant vocal)",
+        "severity": "high",
+        "description": "L'assistant vocal utilise une méthode d'authentification vulnérable aux attaques.",
+        "affected_devices": [
+          "Voice Assistant V2"
+        ],
+        "ai_insights": "Cette vulnérabilité représente un risque sérieux et devrait être corrigée rapidement"
+      }
+    ],
+    "severity_distribution": {
+      "critical": 5,
+      "high": 10,
+      "medium": 15,
+      "low": 5
+    },
+    "discovery_timeline": [
+      {
+        "date": "2023-01-15",
+        "vulnerabilities": 5,
+        "description": "Première analyse de sécurité",
+        "ai_insights": "Les fluctuations dans le nombre de vulnérabilités peuvent refléter l'évolution des capacités de détection plutôt que des changements réels dans la posture de sécurité"
+      },
+      {
+        "date": "2023-02-20",
+        "vulnerabilities": 3,
+        "description": "Scan après mise à jour du firmware"
+      },
+      {
+        "date": "2023-03-10",
+        "vulnerabilities": 8,
+        "description": "Analyse approfondie suite à l'ajout de nouveaux appareils",
+        "ai_insights": "L'introduction de nouveaux équipements est souvent associée à un pic de vulnérabilités. Renforcez les procédures de sécurité préalables à l'intégration."
+      },
+      {
+        "date": "2023-04-05",
+        "vulnerabilities": 2,
+        "description": "Vérification post-correction"
+      }
+    ],
+    "remediation_plan": [
+      {
+        "step": 1,
+        "title": "Mise à jour des firmwares",
+        "description": "Mettre à jour tous les firmwares des appareils connectés, en particulier le routeur et les caméras IP.",
+        "difficulty": "easy",
+        "estimated_time": "1-2 heures",
+        "ai_recommendation": "Priorisez les mises à jour de sécurité et envisagez d'implémenter un système de gestion automatisée des mises à jour."
+      },
+      {
+        "step": 2,
+        "title": "Renforcer les mots de passe",
+        "description": "Changer tous les mots de passe par défaut et utiliser des mots de passe forts uniques pour chaque appareil.",
+        "difficulty": "easy",
+        "estimated_time": "30 minutes",
+        "ai_recommendation": "Envisagez d'intégrer cette correction dans vos procédures opérationnelles standard"
+      },
+      {
+        "step": 3,
+        "title": "Segmenter le réseau",
+        "description": "Créer des réseaux séparés pour les appareils IoT et les ordinateurs personnels afin de limiter les risques.",
+        "difficulty": "medium",
+        "estimated_time": "2 heures",
+        "ai_recommendation": "L'automatisation de cette remédiation via des scripts ou outils dédiés peut améliorer l'efficacité"
+      },
+      {
+        "step": 4,
+        "title": "Configurer un pare-feu",
+        "description": "Mettre en place des règles de pare-feu pour bloquer les communications non essentielles.",
+        "difficulty": "hard",
+        "estimated_time": "3-4 heures",
+        "ai_recommendation": "Adoptez une approche de liste blanche plutôt que de liste noire pour les règles de pare-feu."
+      }
+    ],
+    "ai_advanced_recommendations": [
+      {
+        "title": "Programme de gestion des vulnérabilités critiques",
+        "description": "Mettre en place un processus dédié pour traiter rapidement les vulnérabilités critiques, avec un SLA de 24-48h maximum.",
+        "ai_confidence": 95
+      },
+      {
+        "title": "Automatisation de l'analyse de sécurité",
+        "description": "Implémenter des outils d'analyse continue de sécurité pour identifier les vulnérabilités dès leur apparition.",
+        "ai_confidence": 90
+      },
+      {
+        "title": "Surveillance comportementale du réseau",
+        "description": "Déployer une solution de détection d'anomalies basée sur l'apprentissage automatique pour identifier les comportements suspects.",
+        "ai_confidence": 85
+      },
+      {
+        "title": "Simulation d'attaque (Red Team)",
+        "description": "Organiser des exercices réguliers de simulation d'attaque pour tester les défenses et la réponse aux incidents.",
+        "ai_confidence": 80
+      },
+      {
+        "title": "Programme de formation à la sécurité",
+        "description": "Former régulièrement les utilisateurs aux meilleures pratiques de sécurité et aux techniques d'ingénierie sociale.",
+        "ai_confidence": 90
+      }
+    ]
+  },
+  "protocol_ts:1746978575.816236": {
+    "average_score": 65,
+    "protocol_distribution": {
+      "WPA3": 20,
+      "WPA2": 45,
+      "WPA": 20,
+      "WEP": 10,
+      "OPEN": 5
+    },
+    "protocols": [
+      {
+        "name": "WPA3",
+        "security": 95,
+        "encryption": "CCMP (AES)",
+        "authentication": "SAE",
+        "data_protection": "Très élevée",
+        "known_vulnerabilities": "Très peu",
+        "overall_score": 95,
+        "ai_security_analysis": "Offre le plus haut niveau de sécurité avec authentification SAE"
+      },
+      {
+        "name": "WPA2",
+        "security": 80,
+        "encryption": "CCMP (AES)",
+        "authentication": "PSK",
+        "data_protection": "Élevée",
+        "known_vulnerabilities": "Quelques-unes",
+        "overall_score": 80,
+        "ai_security_analysis": "Sécurité adéquate pour la plupart des usages avec chiffrement AES"
+      },
+      {
+        "name": "WPA",
+        "security": 60,
+        "encryption": "TKIP",
+        "authentication": "PSK",
+        "data_protection": "Moyenne",
+        "known_vulnerabilities": "Plusieurs",
+        "overall_score": 60,
+        "ai_security_analysis": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée"
+      },
+      {
+        "name": "WEP",
+        "security": 30,
+        "encryption": "RC4",
+        "authentication": "Clé partagée",
+        "data_protection": "Faible",
+        "known_vulnerabilities": "Nombreuses",
+        "overall_score": 25,
+        "ai_security_analysis": "Très vulnérable, à remplacer absolument"
+      },
+      {
+        "name": "OPEN",
+        "security": 0,
+        "encryption": "Aucun",
+        "authentication": "Aucune",
+        "data_protection": "Aucune",
+        "known_vulnerabilities": "Toutes",
+        "overall_score": 0,
+        "ai_security_analysis": "Aucune sécurité, recommandation de migration immédiate"
+      }
+    ],
+    "vulnerability_by_protocol": {
+      "WPA3": {
+        "Bruteforce": 5,
+        "MITM": 10,
+        "Déauthentification": 15
+      },
+      "WPA2": {
+        "Bruteforce": 20,
+        "MITM": 25,
+        "Déauthentification": 30
+      },
+      "WPA": {
+        "Bruteforce": 40,
+        "MITM": 45,
+        "Déauthentification": 35
+      },
+      "WEP": {
+        "Bruteforce": 80,
+        "MITM": 75,
+        "Déauthentification": 70
+      }
+    },
+    "protocol_strengths": {
+      "WPA3": {
+        "Chiffrement": 95,
+        "Authentification": 90,
+        "Confidentialité": 90,
+        "Intégrité": 90,
+        "Disponibilité": 85
+      },
+      "WPA2": {
+        "Chiffrement": 80,
+        "Authentification": 75,
+        "Confidentialité": 80,
+        "Intégrité": 75,
+        "Disponibilité": 80
+      },
+      "WPA": {
+        "Chiffrement": 60,
+        "Authentification": 55,
+        "Confidentialité": 60,
+        "Intégrité": 60,
+        "Disponibilité": 75
+      }
+    },
+    "recommendations": [
+      {
+        "title": "Mettre à niveau vers WPA3",
+        "description": "Le protocole WPA3 offre une meilleure protection contre les attaques par force brute et une confidentialité de transfert parfaite.",
+        "ai_insight": "Le WPA3 offre une protection contre les attaques par force brute grâce à l'authentification SAE et une confidentialité de transfert parfaite."
+      },
+      {
+        "title": "Remplacer les appareils utilisant WEP",
+        "description": "Les appareils utilisant WEP représentent un risque majeur pour votre réseau. Remplacez-les ou isolez-les dans un réseau séparé.",
+        "ai_insight": "En complément, envisagez d'implémenter une surveillance en temps réel pour détecter les anomalies"
+      },
+      {
+        "title": "Activer le filtrage MAC",
+        "description": "Bien que non infaillible, le filtrage MAC ajoute une couche de protection supplémentaire en limitant les appareils autorisés à se connecter.",
+        "ai_insight": "Cette recommandation devrait être mise en œuvre dans le cadre d'une stratégie de défense en profondeur"
+      }
+    ],
+    "ai_protocol_comparison": {
+      "summary": "L'analyse comparative des protocoles révèle des différences significatives en termes de sécurité",
+      "protocols": {
+        "WPA3": {
+          "insight": "Offre le plus haut niveau de sécurité avec authentification SAE",
+          "recommendation": "Continuer d'utiliser WPA3 avec des mots de passe forts"
+        },
+        "WPA2": {
+          "insight": "Sécurité adéquate pour la plupart des usages avec chiffrement AES",
+          "recommendation": "Migrer vers WPA3 si les équipements le supportent"
+        },
+        "WPA": {
+          "insight": "Vulnérable à certaines attaques TKIP, migration vers WPA2/3 recommandée",
+          "recommendation": "Migrer d'urgence vers WPA2 ou idéalement WPA3"
+        },
+        "WEP": {
+          "insight": "Très vulnérable, à remplacer absolument",
+          "recommendation": "Remplacer immédiatement par WPA2 ou WPA3"
+        },
+        "OPEN": {
+          "insight": "Aucune sécurité, recommandation de migration immédiate",
+          "recommendation": "Implémenter immédiatement un chiffrement WPA2 ou WPA3"
+        }
+      }
+    }
   }
 }
